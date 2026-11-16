@@ -15,8 +15,8 @@
                     title="{{ auth()->user()->name }}"
                     subtitle="{{ auth()->user()->email }}"
                     class="py-3"
-                >
-                    <template v-slot:prepend>
+                >resources/views/panel.blade.php
+                     <template v-slot:prepend>
                         <v-avatar color="primary">
                             <v-icon icon="mdi-account"></v-icon>
                         </v-avatar>
