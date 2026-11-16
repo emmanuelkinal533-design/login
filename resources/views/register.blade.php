@@ -26,7 +26,6 @@
                     <v-alert v-if="exito" type="success" variant="tonal" class="mb-4" density="compact">
                         @{{ exito }}
                     </v-alert>
-
                     <v-form @submit.prevent="registrarUsuario">
                         <v-text-field
                             v-model="name"
@@ -40,7 +39,7 @@
                         <v-text-field
                             v-model="email"
                             label="Correo electrónico"
-                            type="email"
+                            type=   "email"
                             prepend-inner-icon="mdi-email"
                             variant="outlined"
                             class="mb-2"
@@ -110,7 +109,7 @@
                             password: password.value,
                             password_confirmation: password_confirmation.value
                         });
-                        exito.value = 'Usuario guardado en MySQL. Redirigiendo al panel...';
+                        exito.value = 'Usuario registrado correctamente. Redirigiendo al panel...';
                         setTimeout(() => {
                             window.location.href = '/panel';
                         }, 1000);

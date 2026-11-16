@@ -15,7 +15,7 @@
                     title="{{ auth()->user()->name }}"
                     subtitle="{{ auth()->user()->email }}"
                     class="py-3"
-                >resources/views/panel.blade.php
+                *aca puede mostrar otro mensaje que nesesites* >
                      <template v-slot:prepend>
                         <v-avatar color="primary">
                             <v-icon icon="mdi-account"></v-icon>
